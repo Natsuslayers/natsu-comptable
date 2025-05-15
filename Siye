@@ -1,0 +1,65 @@
+import React from "react";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-gray-50 text-gray-800">
+      <header className="bg-blue-800 text-white py-6 shadow">
+        <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
+          <h1 className="text-2xl font-bold">Natsu Comptable</h1>
+          <nav className="space-x-4">
+            <a href="#services" className="hover:underline">Services</a>
+            <a href="#about" className="hover:underline">À propos</a>
+            <a href="#contact" className="hover:underline">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section className="bg-white py-20 text-center">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-4">Votre partenaire fiscal & comptable en Belgique</h2>
+          <p className="text-lg text-gray-600 mb-8">Optimisez votre fiscalité et simplifiez votre comptabilité avec Natsu Comptable.</p>
+          <a href="#contact" className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-900">Demander un devis</a>
+        </div>
+      </section>
+
+      <section id="services" className="py-16 bg-gray-100">
+        <div className="max-w-6xl mx-auto px-4">
+          <h3 className="text-3xl font-semibold mb-8 text-center">Nos services</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded shadow">
+              <h4 className="text-xl font-bold mb-2">Comptabilité</h4>
+              <p>Tenue comptable pour indépendants, freelances et PME. Déclarations TVA, bilan, etc.</p>
+            </div>
+            <div className="bg-white p-6 rounded shadow">
+              <h4 className="text-xl font-bold mb-2">Fiscalité</h4>
+              <p>Déclarations IPP, ISOC, précomptes. Optimisation fiscale en conformité avec la loi belge.</p>
+            </div>
+            <div className="bg-white p-6 rounded shadow">
+              <h4 className="text-xl font-bold mb-2">Création d'entreprise</h4>
+              <p>Conseils pour lancer votre activité, statut juridique, démarches administratives.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h3 className="text-3xl font-semibold mb-4">À propos de Natsu Comptable</h3>
+          <p className="text-gray-700">Avec une expertise pointue en fiscalité belge, nous vous accompagnons à chaque étape : de la création d’entreprise à la gestion complète de votre comptabilité.</p>
+        </div>
+      </section>
+
+      <section id="contact" className="py-16 bg-gray-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h3 className="text-3xl font-semibold mb-4">Contact</h3>
+          <p className="mb-4">Envoyez-nous un email à <a className="text-blue-700 underline" href="mailto:contact@natsucomptable.be">contact@natsucomptable.be</a></p>
+          <p>Ou appelez-nous au <strong>+32 472 123 456</strong></p>
+        </div>
+      </section>
+
+      <footer className="bg-blue-800 text-white py-4 text-center">
+        <p>&copy; 2025 Natsu Comptable. Tous droits réservés.</p>
+      </footer>
+    </main>
+  );
+}
